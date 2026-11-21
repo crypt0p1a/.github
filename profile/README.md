@@ -4,7 +4,7 @@
 
 **Open source tools for crypto trading, written in Rust**
 
-From a complete Kraken Spot client, to a scalping bot running on it, to a team of AI agents that build the next thing.
+From a complete Kraken Spot API client for Rust, Kotlin and Swift, to a Kraken trading bot running on it, to a team of Claude Code AI agents that build the next thing.
 
 <br>
 
@@ -35,7 +35,7 @@ let public_api = PublicApi::new(RestOptions::default(), limiter.clone())?;
 let tickers = public_api.tickers(&["XBTUSD".into()]).await?;
 ```
 
-**[→ crypt0p1a/kraken-rust](https://github.com/crypt0p1a/kraken-rust)**
+**[→ kraken-rust: the Kraken API client for Rust, Kotlin and Swift](https://github.com/crypt0p1a/kraken-rust)**
 
 <br>
 
@@ -48,11 +48,13 @@ let tickers = public_api.tickers(&["XBTUSD".into()]).await?;
 ![ratatui](https://img.shields.io/badge/ratatui-dashboard-0b9a6d?style=flat-square)
 ![ntfy](https://img.shields.io/badge/ntfy-notifications-317f6f?style=flat-square)
 
-Each **manager** trades its own budget on one pair with limit orders only: it buys below the market, sells for what it cost plus a margin, fees included, and starts again. Several accounts, virtual managers for the idle money, and a dashboard to follow it all.
+- **Limit orders only**: each manager buys below the market, sells for what it cost plus a margin, fees included, and starts again
+- **A dry run first**: Kraken only validates the orders until you say otherwise
+- **Several Kraken accounts**, virtual managers for the idle money and crypto, a terminal dashboard and notifications on the phone, in Docker
 
 <a href="https://github.com/crypt0p1a/kraken-trading-bot"><img src="https://raw.githubusercontent.com/crypt0p1a/kraken-trading-bot/main/assets/screenshots/desk.svg" alt="The dashboard of the bot: key figures, managers, orders, markets" width="100%"></a>
 
-**[→ crypt0p1a/kraken-trading-bot](https://github.com/crypt0p1a/kraken-trading-bot)**
+**[→ kraken-trading-bot: the open source crypto trading bot for Kraken](https://github.com/crypt0p1a/kraken-trading-bot)**
 
 <br>
 
@@ -70,7 +72,7 @@ Each **manager** trades its own budget on one pair with limit orders only: it bu
 
 <a href="https://github.com/crypt0p1a/hivemind"><img src="https://raw.githubusercontent.com/crypt0p1a/hivemind/main/docs/dashboard.svg" alt="hive dash: a demo company at work" width="100%"></a>
 
-**[→ crypt0p1a/hivemind](https://github.com/crypt0p1a/hivemind)**
+**[→ hivemind: a company of Claude Code agents](https://github.com/crypt0p1a/hivemind)**
 
 <br>
 
@@ -90,5 +92,11 @@ Each **manager** trades its own budget on one pair with limit orders only: it bu
 
 <div align="center">
 <br>
-<sub>Built in the open · contributions and stars welcome ⭐</sub>
+
+[![💼 LinkedIn: Kevin Le Perf](https://img.shields.io/badge/%F0%9F%92%BC_LinkedIn-Kevin_Le_Perf-0A66C2)](https://www.linkedin.com/in/kevin-le-perf)
+[![🐙 Kraken: join with my invite](https://img.shields.io/badge/%F0%9F%90%99_Kraken-join_with_my_invite-5741D9)](https://invite.kraken.com/JDNW/iuba05c7)
+
+<sub>Made by Kevin Le Perf, not a trader: not financial advice, feedback and reviews very welcome · the Kraken badge is a referral link · built in the open, stars welcome ⭐</sub>
+
+<sub>Not affiliated with Kraken: Kraken is a trademark of Payward, Inc. These projects are independent, neither endorsed nor supported by Kraken or Payward.</sub>
 </div>
